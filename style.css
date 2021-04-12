@@ -1,0 +1,158 @@
+html{
+    scroll-behavior: smooth;
+}
+li a:hover:not(.active) {
+    background-color:whitesmoke;
+}
+.navbar{
+    display: inline;
+    list-style-type: none;
+    width: 100%;
+    left: 0%;
+    top: 0%;
+    position: fixed;
+    align-items: center;
+    z-index: 1;
+    background-color: #fff;
+}
+.navright{
+    margin: 0;
+    padding: 0;
+    position: fixed;
+    top:0;
+    right: 0;
+    display: flex;
+    flex-direction: row;
+}
+.overlay ul{
+    list-style-type: none;
+    overflow: hidden;
+    background-color:white;
+}
+.overlay li a {
+    display: block;
+    color:black;
+    padding: 14px 16px;
+    text-decoration: none;
+  }
+
+.overlay p{
+    text-align: center;
+    font-weight: 300;
+    font-size: 50;
+}
+.overlay h1{
+    text-align: center;
+}
+.overlay h3{
+    text-align: center;
+}
+#myVideo {
+    width: 100%;
+    min-height: 100%;
+    z-index: 0;
+  }
+
+.overlay{
+    right:0%;
+    left:0%;
+    bottom:0%;
+    top:1%;
+    position: absolute;
+    /* text-align: center; */
+    z-index: 1;
+    animation: text ;
+    animation-duration: 5s;
+    color:black; 
+}
+@keyframes text {
+    0%{
+        color:rgb(187, 70, 103);
+        
+    }
+    45%{
+        color:rgb(121, 41, 64);
+        letter-spacing: 5px;
+    }
+    95%{
+        color:rgb(92, 31, 48);
+        letter-spacing: 0px;
+    }
+}
+
+  
+.overview h1{
+    font-size: 40;
+    font-family: helvetica;
+    letter-spacing:2px;
+    margin-left: 10%;
+        scroll-behavior: smooth;
+      
+      
+}
+button{
+    border: none;
+    background-color: white;
+    padding: 15px 32px;
+    text-align: center;
+    font-size: 25;
+    font-family: helvetica;
+    margin-left: 10%;
+
+}
+button img{
+    height: 30;
+    margin-left: 10;
+    margin-bottom: -9;
+}
+button a{
+    color:black;
+}
+* {
+    box-sizing: border-box;
+  }
+  
+.column {
+    float: left;
+    width: 25%;
+    padding: 5px;
+    margin-top: 10%;
+    margin-bottom: 10%;
+  }
+  
+  /* Clearfix (clear floats) */
+.row::after {
+    content: "";
+    clear: both;
+    display: table;
+    
+  }
+.specs h1{
+    font-size: 25;
+    font-family: helvetica;
+    margin: 5%;
+    color: black;
+}
+.specs pre{
+    font-size: 20;
+    font-family: helvetica;
+    color: rgb(75, 75, 75);
+    margin-top: -40;
+    margin-bottom: 5%;
+}
+.specs h2{
+    font-size: 22;
+    font-family: helvetica;
+    margin-bottom: 5%;
+    margin-left: 5%;
+    color: black;
+    margin-top: -40;
+}
+footer h1{
+    text-align: center;
+}
+footer p{
+    font-size: 20;
+    font-family: helvetica;
+    text-align: center;
+}
